@@ -1,0 +1,203 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "bytes21",
+				"name": "feedId",
+				"type": "bytes21"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "symbol",
+				"type": "string"
+			}
+		],
+		"name": "FeedAdded",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "bytes21[]",
+				"name": "feedIds",
+				"type": "bytes21[]"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256[]",
+				"name": "prices",
+				"type": "uint256[]"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint64",
+				"name": "timestamp",
+				"type": "uint64"
+			}
+		],
+		"name": "PricesUpdated",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes21",
+				"name": "feedId",
+				"type": "bytes21"
+			},
+			{
+				"internalType": "string",
+				"name": "symbol",
+				"type": "string"
+			}
+		],
+		"name": "addFeed",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "feedIds",
+		"outputs": [
+			{
+				"internalType": "bytes21",
+				"name": "",
+				"type": "bytes21"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes21",
+				"name": "",
+				"type": "bytes21"
+			}
+		],
+		"name": "feedSymbols",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllFeeds",
+		"outputs": [
+			{
+				"internalType": "bytes21[]",
+				"name": "",
+				"type": "bytes21[]"
+			},
+			{
+				"internalType": "string[]",
+				"name": "",
+				"type": "string[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getBtcUsdPrice",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "int8",
+				"name": "decimals",
+				"type": "int8"
+			},
+			{
+				"internalType": "uint64",
+				"name": "timestamp",
+				"type": "uint64"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getFtsoCurrentFeedValues",
+		"outputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "_feedValues",
+				"type": "uint256[]"
+			},
+			{
+				"internalType": "int8[]",
+				"name": "_decimals",
+				"type": "int8[]"
+			},
+			{
+				"internalType": "uint64",
+				"name": "_timestamp",
+				"type": "uint64"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "lastUpdateTimestamp",
+		"outputs": [
+			{
+				"internalType": "uint64",
+				"name": "",
+				"type": "uint64"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes21",
+				"name": "",
+				"type": "bytes21"
+			}
+		],
+		"name": "latestPrices",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
